@@ -1,0 +1,94 @@
+.project{
+    margin-top: 30em;
+}
+
+.project-header{
+    font-size: 23px;
+    margin-bottom: 0.8em;
+    background: linear-gradient(90deg,#b0f3f1,#ffcfdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -.03em;
+}
+
+.project-header-text p{
+    font-size: 1.1rem;
+    color: #c4c4c4;
+    line-height: 130.4%;
+}
+
+.projects{
+  margin-top: 4em;
+}
+
+.card{
+    border: 0.2rem solid #20222e;
+    border-radius: 2em;
+    padding: 3em 2em;
+    width: 300px;
+    height: 350px;
+    margin-bottom:5em;
+    margin-left: auto;
+    margin-right: auto;
+    background:linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header span{
+  font-size: 5rem;
+}
+
+.card-header h2{
+    color: #fff;
+    font-size: 25.76px;
+    line-height: 125%;
+    margin-bottom: 0.5em;
+}
+
+.card-text p{
+    font-size: 0.9rem;
+    color: #c4c4c4;
+    line-height: 130.4%;
+    margin-bottom: 1.5em;
+}
+
+.card-link a{
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #c4c4c4;
+  padding: 0.3em 0;
+}
+
+
+.project-one .card-header span,.project-one .card-link a{
+    color: #6B9796;
+}
+
+.project-two .card-header span,.project-two .card-link a{
+    color: #e6972f;
+}
+
+.project-three .card-header span,.project-three .card-link a{
+    color: #57a3c7;
+}
+
+@media screen and (min-width: 768px){
+    .project{
+        margin-top: 10em;
+    }
+
+    .project-header{
+        font-size: 25px;
+    }
+
+    .card{
+        width: 500px;
+        height: 350px;
+    }
+}

@@ -1,0 +1,109 @@
+.contact-wrapper{
+   display: grid;
+   place-items: center;
+   text-align: center;
+   margin-top: 8em;
+}
+
+.contact-header{
+    font-size: 23px;
+    margin-bottom: 0.5em;
+    background: linear-gradient(90deg,#b0f3f1,#ffcfdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -.03em;
+}
+
+.contact-header-text p{
+    font-size:20px;
+    color: #c4c4c4;
+    line-height: 130.4%;
+}
+
+.contact-header-text p span{
+    color: #57a3c7;
+}
+
+.contact .call{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em
+}
+
+.socials-header{
+    margin-top: 2em;
+}
+
+.socials-header h2{
+    font-size: 27px;
+    background: linear-gradient(90deg,#b0f3f1,#ffcfdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -.03em;
+}
+
+.socials-header p{
+    font-size:16px;
+    color: #c4c4c4;
+    line-height: 130.4%;
+    margin-bottom: 0.5em;
+}
+
+.icons{
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+}
+
+.icons a{
+    color: #57a3c7;
+}
+
+.contact-icons p{
+    font-size:16px;
+    color: #c4c4c4;
+    line-height: 130.4%;
+    margin-bottom: 0.5em;
+}
+
+.contact-icons p span{
+    color: #57a3c7;
+}
+
+@media screen and (min-width: 768px){
+    .contact-header{
+        font-size: 25px;
+    }
+
+    .contact-header-text p{
+        font-size: 21px;
+       width: 62%;
+       margin: 0 auto;
+    }
+
+    .socials-header h2{
+        font-size: 30px;
+    }
+    
+    .socials-header p{
+        font-size:18px;
+    }
+    
+    .icons a{
+        font-size: 20px;
+    }
+    
+    .contact-icons p{
+        font-size:18px;
+    }
+}
+
+
+
+
+
+
+
+

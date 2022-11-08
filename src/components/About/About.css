@@ -1,0 +1,201 @@
+.about{
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-header{
+    font-size: 23px;
+    margin-bottom: 0.8em;
+    background: linear-gradient(90deg,#b0f3f1,#ffcfdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -.03em;
+}
+
+.about-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.about-left p{
+    font-size: 1.1rem;
+    color: #c4c4c4;
+    line-height: 130.4%;
+}
+
+.about-right{
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 50em;
+    transform: translate(-50%, -50%);
+}
+
+.main-circle{
+    left: 9rem;
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 100%;
+    /* top: 2rem; */
+    border: 2px solid #20222e;
+}
+
+.main-circle>*{
+    position: absolute;
+}
+
+.main-circle > :nth-child(3){
+    left: 5.7rem;
+    top: -2rem;
+}
+
+.main-circle > :nth-child(2){
+    left: -1.8rem;
+    top: 5.5rem;
+}
+
+.main-circle > :nth-child(1){
+    left: 5.3rem;
+    top: 6.3rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.main-circle > :nth-child(4){
+    left: 13.5rem;
+    top: 5.5rem;
+}
+
+.main-circle > :nth-child(5){
+    left: 6rem;
+    top: 13.5rem;
+}
+
+.subcircle{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    border-radius: 100%;
+    background:linear-gradient(
+        -168.39deg,
+        #ffffff -278.56%,
+        #6d6d6d -78.47%,
+        #11101d 91.61%
+      );
+      /* border-radius: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px){
+    .about{
+        margin-top: 10em;
+    }
+    
+    .about-header{
+        font-size: 25px;
+    }
+
+    .about-flex{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .about-left p{
+      width: 50%;
+    }
+
+    .about-right{
+        margin-right: 10em;
+        margin-top: 23em;
+    }
+
+    .main-circle{
+        left: 15rem;
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .main-circle > :nth-child(3){
+        left: 9rem;
+        top: -2rem;
+    }
+    
+    .main-circle > :nth-child(2){
+        left: -2.5rem;
+        top: 8.8rem;
+    }
+    
+    .main-circle > :nth-child(1){
+        left: 9.4rem;
+        top: 9.5rem;
+    }
+    
+    .main-circle > :nth-child(4){
+        left: 18.5rem;
+        top: 8rem;
+    }
+    
+    .main-circle > :nth-child(5){
+        left: 9rem;
+        top: 18.5rem;
+    }
+    
+    .subcircle{
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 768px) {
+    .about-right{
+        margin-right: 3em;
+        margin-top: 15em;
+    }
+    
+    .main-circle{
+        left: 9rem;
+        width: 16rem;
+        height: 16rem;
+    }
+    
+    .main-circle > :nth-child(3){
+        left: 5.7rem;
+        top: -2rem;
+    }
+    
+    .main-circle > :nth-child(2){
+        left: -1.8rem;
+        top: 5.5rem;
+    }
+    
+    .main-circle > :nth-child(1){
+        left: 5.3rem;
+        top: 6.3rem;
+    }
+    
+    .main-circle > :nth-child(4){
+        left: 13.5rem;
+        top: 5.5rem;
+    }
+    
+    .main-circle > :nth-child(5){
+        left: 6rem;
+        top: 13.5rem;
+    }
+    
+    .subcircle{
+        width: 4rem;
+        height: 4rem;
+    }
+}

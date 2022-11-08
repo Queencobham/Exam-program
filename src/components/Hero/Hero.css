@@ -1,0 +1,25 @@
+.hero{
+  margin-top: 8rem
+}
+
+.hero-text span{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -.03em;
+}
+
+@media screen and (min-width: 768px){
+  .hero{
+    margin-top: 12rem
+  }
+
+  .hero-text span{
+    font-size: 5rem;
+  }
+
+  .hero-text{
+    width: 650px;
+  }
+}

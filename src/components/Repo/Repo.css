@@ -1,0 +1,127 @@
+
+.repos-wrapper{
+    width: 100%;
+}
+
+.main{
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 15px; */
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav a{
+    margin-right: 1em;
+    color: #c4c4c4;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    text-decoration: none;
+}
+
+section h1{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    background: linear-gradient(90deg,#b0f3f1,#ffcfdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -.03em;
+}
+
+.repos-wrapper ul{
+    border: 0.2rem solid #20222e;
+    border-radius: 0.7em;
+    padding: 1.2em 0.5em;
+    width: 320px;
+    height: 80px;
+    margin-bottom:2em;
+    background:linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));
+}
+
+.repos-wrapper ul li{
+    display: flex;
+    gap: 0.5em; 
+}
+
+.repos-wrapper ul li span{
+    color: #c4c4c4;
+    margin-top: 0.2em;
+    font-size: 20px;
+}
+
+.repos-wrapper ul a{
+   text-decoration: none;
+   color: #c4c4c4;
+   font-size: 16px;
+}
+
+.public{
+    background-color: #57a3c7;
+    width: 70px;
+    padding: 0.1em 1em;
+    border-radius: 10px;;
+    
+}
+
+@media screen and (max-width: 1066px){
+    .repos-wrapper ul{
+        width: 300px;
+    }
+   
+    .main{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 634px){
+    .repos-wrapper ul{
+        width: 300px;
+    }
+
+    .main{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    /* .main{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    } */
+}
+
+/** post style **/
+.post-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.post-info p{
+    font-size: 1.3em;
+    color: #c4c4c4;
+}
+
+.post-info a{
+    color:#c4c4c4;
+}
+
+.post-info a:hover{
+    text-decoration: none;
+}
+
+.loading{
+    color: white;
+    font-size: 23px;
+}
+
+
+

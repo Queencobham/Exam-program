@@ -1,0 +1,87 @@
+.page-not-found{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.page-text-top{
+    margin-bottom: 1em;
+}
+
+.page-text-top h1{
+    margin-top: -0.3em;
+    font-size: 13rem;
+    background: linear-gradient(90deg,#b0f3f1,#ffcfdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -.03em;
+}
+
+.page-text-top p{
+   color: #fff;
+   margin-top: 0.5em;
+   text-transform: uppercase;
+   font-size: 1.6rem;
+   letter-spacing: .07em;
+   font-weight: 700;
+}
+
+.page-text-bottom p{
+  color: #c4c4c4;
+  font-size: 1.1rem;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.page-text-bottom a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #57a3c7;
+    padding: 0.8em 2em;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.page-text-bottom a:hover{
+    background-color: transparent;
+    border: 2px solid #57a3c7
+}
+
+@media screen and (max-width: 601px){
+    .page-text-top h1{
+        font-size: 10rem;
+    }
+
+    .page-text-bottom p{
+        color: #c4c4c4;
+        font-size: 1.1rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 389px){
+    .page-text-top h1{
+        font-size: 7rem;
+    }
+
+    .page-text-top p{
+        font-size: 1.3rem;
+     }
+
+    .page-text-bottom p{
+        color: #c4c4c4;
+        font-size: 1.09rem;
+        width: 90%;
+    }
+
+    .page-text-bottom a{
+        padding: 0.8em 1.5em;
+        font-size: 1rem;
+    }
+}

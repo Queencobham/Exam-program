@@ -1,0 +1,27 @@
+.footer-wrapper{
+ position: absolute;
+ left: 0;
+ right: 0;
+color: #fff;
+text-align: center;
+margin-bottom: 1em;
+margin-top: 50px;
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px){    
+       .footer-flex{
+           flex-direction: row;
+           gap: 5em;
+           font-size: 1rem;
+           justify-content: center;
+           align-items: flex;
+       }
+}
+    
