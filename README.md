@@ -3,4 +3,5 @@
 Link to hosted site
 
 
-http://alt-school-exams.vercel.app/
+https://queencobham-altschool.netlify.app/
+
