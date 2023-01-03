@@ -18,14 +18,14 @@ export default function Navbar(){
         <Link  to='#nav' smooth><AiFillHome /></Link>
         <Link  to='#about' smooth><SiAboutdotme /></Link>
         <Link  to='#project' smooth><BsFillBriefcaseFill /></Link>
-        <Link  to='#contact' smooth><MdContactPhone /></Link>
+        {/* <Link  to='#contact' smooth><MdContactPhone /></Link> */}
         </ul>
 
         <ul className='desktop'>
         <Link spy ={true} to='#nav' smooth activeClass="activeClass"> Home</Link>
         <Link spy ={true} to='#about' smooth>About</Link>
         <Link spy ={true} to='#project' smooth>Portfolio</Link>
-        <Link spy ={true} to='#contact' smooth>Contact</Link>
+        {/* <Link spy ={true} to='#contact' smooth>Contact</Link> */}
         </ul>
       </div>
    </div>
