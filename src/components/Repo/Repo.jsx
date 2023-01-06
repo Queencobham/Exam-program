@@ -38,16 +38,16 @@ export default function Repos() {
       </nav>
       <section className="bbb">
         <h1>My Repos</h1>
-         <div className="repos-wrapper">
+        <div className="repos-wrapper">
         <RepoList repos={currentPosts} />
         </div>
         <Outlet />
         <Pagination
-                totalPosts={repos.length}
-                postsPerPage={postsPerPage}
-                setCurrentPage={setCurrentPage}
-                currentPage={currentPage}
-            />
+          totalPosts={repos.length}
+          postsPerPage={postsPerPage}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        />
       </section>
      </>
       }
