@@ -14,7 +14,7 @@ export default function Github(){
     const [followers, setFollowers] = useState();
     const [following, setFollowing] = useState();
     const [repo, setRepo] = useState();
-    
+    const [loading, setLoading] = useState(true);
   
     useEffect(() => {
       fetch("https://api.github.com/users/queencobham")
@@ -29,7 +29,9 @@ export default function Github(){
             setFollowers(result.followers)
             setFollowing(result.following)
             setRepo(result.public_repos)
+            setLoading(false)
           },
+         
           (error) => {
             console.log(error);
           }
@@ -43,8 +45,10 @@ export default function Github(){
         <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
         <link rel="canonical" href="/github" />
       </Helmet>
-      
-      <div className="github-wrapper">
+       
+       {loading ? <p className='loading'>Loading....</p> :
+       <>
+        <div className="github-wrapper">
         <div className="github-img">
             <img src={avatar} alt="my-image"/>
         </div>
@@ -78,6 +82,9 @@ export default function Github(){
         <Link to ='/repo'>View Repo</Link>
         </div>
       </div>
+       </>
+       }
+      
       </>
     );
-  }
+}
