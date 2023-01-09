@@ -5,6 +5,7 @@ import "./Repo.css"
 import { useState } from "react";
 import Pagination from "./Pagination";
 import RepoList from "./RepoList";
+import {Helmet} from "react-helmet-async"
 
 export default function Repos() {
   const [repos, setRepos] = React.useState([]);
@@ -30,6 +31,13 @@ export default function Repos() {
 
   return (
     <>
+     <Helmet>
+        <title>Repositories</title>
+        <meta name="description" content='List of all my repositories'/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
+        <link rel="canonical" href="/" />
+      </Helmet>
+     
      {loading ? <p className="loading">Loading....</p> : 
      <>
      <nav>

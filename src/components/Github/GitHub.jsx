@@ -39,12 +39,12 @@ export default function Github(){
     }, []);
     return (
       <>
-      <Helmet>
-        <title>Github page</title>
+       <Helmet>
+        <title>Github Profile</title>
         <meta name="description" content='github profile'/>
         <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
         <link rel="canonical" href="/github" />
-      </Helmet>
+       </Helmet>
        
        {loading ? <p className='loading'>Loading....</p> :
        <>
