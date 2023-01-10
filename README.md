@@ -3,5 +3,5 @@
 Link to hosted site
 
 
-https://queencobham-altschool.netlify.app/
+https://altschool-fetchgithubapi.netlify.app/
 
