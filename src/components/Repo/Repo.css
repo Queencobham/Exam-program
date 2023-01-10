@@ -34,6 +34,8 @@ section h1{
 }
 
 .repos-wrapper ul{
+    display: flex;
+    justify-content: space-between;
     border: 0.2rem solid #20222e;
     border-radius: 0.7em;
     padding: 1.2em 0.5em;
@@ -62,8 +64,9 @@ section h1{
 
 .public{
     background-color: #57a3c7;
-    width: 70px;
-    padding: 0.1em 1em;
+    width: 60px;
+    height: 30px;
+    padding: 0.1em 0.35em;
     border-radius: 10px;;
 }
 

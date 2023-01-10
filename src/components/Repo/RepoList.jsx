@@ -32,6 +32,7 @@ const RepoList = ({repos}) => {
                 <li>
                 <span><RiGitRepositoryLine/></span><Link to={`/repo/${repo.name}`}>{repo.name}</Link>
                 </li>
+                <li className='public'>{repo.visibility}</li>
                 </ul> 
                 </div>
               );
