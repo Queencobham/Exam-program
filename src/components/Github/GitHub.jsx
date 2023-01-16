@@ -1,7 +1,6 @@
 import React from 'react'
 import {useEffect, useState} from 'react'
 import './Github.css'
-import {GoLocation, GoCalendar} from 'react-icons/go'
 import {Link} from "react-router-dom"
 import { Helmet } from 'react-helmet-async'
 
@@ -9,8 +8,6 @@ export default function Github(){
     const [avatar, setAvatar] = useState();
     const [name, setName] = useState();
     const [bio, setBio] = useState();
-    const [location, setLocation] = useState();
-    const [created, setCreated] = useState();
     const [followers, setFollowers] = useState();
     const [following, setFollowing] = useState();
     const [repo, setRepo] = useState();
@@ -24,8 +21,6 @@ export default function Github(){
             setAvatar(result.avatar_url);
             setName(result.name);
             setBio(result.bio)
-            setLocation(result.location)
-            setCreated(result.created_at.slice(0, 10))
             setFollowers(result.followers)
             setFollowing(result.following)
             setRepo(result.public_repos)
@@ -48,6 +43,9 @@ export default function Github(){
        
        {loading ? <p className='loading'>Loading....</p> :
        <>
+       <nav>
+        <Link to="/">Go back to the Homepage</Link>
+       </nav>
         <div className="github-wrapper">
         <div className="github-img">
             <img src={avatar} alt="my-image"/>
@@ -55,14 +53,6 @@ export default function Github(){
         <div className="github-name">
             <h1>{name}</h1>
             <h2>{bio}</h2>
-        </div>
-        <div className="github-lo-cr">
-            <div className="location">
-            <span><GoLocation /></span><p>{location}</p>
-            </div>
-            <div className="created">
-            <span><GoCalendar /></span><p>Joined {created}</p>
-            </div>
         </div>
         <div className="github-cards">
          <div className="repository">

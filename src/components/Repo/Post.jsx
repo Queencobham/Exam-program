@@ -37,6 +37,7 @@ export default function Repo() {
         <p>Language used: {repo.language}</p>
         <p>Size: {repo.size} KB</p>
         <p>Date created: {repo.created_at.slice(0, 10)}</p>
+        <p>Last update: {repo.updated_at.slice(0,10)}</p>
         <p><a href={`${repo.html_url}`}>Click to view repo on github</a></p>
         </>
       ) : ""}

@@ -38,11 +38,16 @@ section h1{
     justify-content: space-between;
     border: 0.2rem solid #20222e;
     border-radius: 0.7em;
-    padding: 1.2em 0.5em;
+    padding: 1.5em 0.5em;
     width: 320px;
     height: 80px;
     margin-bottom:2em;
     background:linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));
+}
+
+.repos-wrapper ul:hover{
+ border-left: 5px solid #57a3c7;
+ /* transition: 5s ease; */
 }
 
 .repos-wrapper ul li{
@@ -52,7 +57,6 @@ section h1{
 
 .repos-wrapper ul li span{
     color: #c4c4c4;
-    margin-top: 0.2em;
     font-size: 20px;
 }
 
@@ -67,7 +71,8 @@ section h1{
     width: 60px;
     height: 30px;
     padding: 0.1em 0.35em;
-    border-radius: 10px;;
+    margin-top: -0.2em;
+    border-radius: 10px;
 }
 
 .search{

@@ -40,7 +40,7 @@ export default function Repos() {
      
      {loading ? <p className="loading">Loading....</p> : 
      <>
-     <nav>
+      <nav>
         <Link to="/">Home</Link>
         <Link to="/github">Back</Link>
       </nav>
