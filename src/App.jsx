@@ -1,6 +1,5 @@
 import Home from "./Home"
 import Page from "./components/Page404/Page"
-import Github from "./components/Github/Github"
 import Repo from "./components/Repo/Repo"
 import Post from "./components/Repo/Post"
 import ErrorPage from "./components/ErrorBoundary/ErrorPage"
@@ -12,7 +11,6 @@ function App() {
     <> 
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='github' element={<Github />} />
       <Route path='repo' element={<Repo />} />
       <Route path="/repo/:repoName" element={<Post />} />
       <Route/>
