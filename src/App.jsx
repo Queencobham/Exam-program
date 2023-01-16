@@ -2,7 +2,7 @@ import Home from "./Home"
 import Page from "./components/Page404/Page"
 import Repo from "./components/Repo/Repo"
 import Post from "./components/Repo/Post"
-import Github from "./components/Github/Github"
+import Github from "./components/Github/GitHub"
 import ErrorPage from "./components/ErrorBoundary/ErrorPage"
 import './App.css'
 import {Routes, Route} from "react-router-dom"
